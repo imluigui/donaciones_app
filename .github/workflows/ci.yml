@@ -28,7 +28,7 @@ jobs:
     - name: Run tests with pytest
       run: |
         pip install pytest-cov
-        pytest tests/test_auth.py --cov=app --cov-report=xml
+        PYTHONPATH=. pytest tests/test_auth.py --cov=app --cov-report=xml
 
     - name: SonarCloud Scan
       uses: SonarSource/sonarcloud-github-action@v3
