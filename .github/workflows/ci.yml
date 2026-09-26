@@ -36,8 +36,8 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       with:
         args: >
-          -Dsonar.projectKey=donaciones_app_key
-          -Dsonar.organization=tu-organizacion-de-github
+          -Dsonar.projectKey=imluigui_donaciones_app
+          -Dsonar.organization=imluigui
           -Dsonar.sources=app
           -Dsonar.python.coverage.reportPaths=coverage.xml
 
